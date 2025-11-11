@@ -1,2 +1,59 @@
-<!DOCTYPE html><html lang="ko"><head><meta charset="UTF-8"/><title>온보딩</title>
-  <link rel="stylesheet" href="css/style.css"/></head><body><h1>온보딩</h1></body></html>
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <title>온보딩 | 일정관리 앱</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+<header>
+  <h1>온보딩</h1>
+</header>
+
+<nav>
+  <a href="home.html">홈</a> |
+  <a href="onboarding.html">온보딩</a> |
+  <a href="todo.html">할 일</a> |
+  <a href="habit.html">습관</a> |
+  <a href="setting.html">설정</a>
+</nav>
+
+<main class="container">
+  <!-- 현재 단계: 정적 골격 → 제출 시 home.html로 이동 -->
+  <form class="card" method="get" action="home.html">
+    <div class="field">
+      <label>이름</label>
+      <input name="name" placeholder="홍길동" required />
+    </div>
+
+    <div class="field">
+      <label>성별</label>
+      <select name="gender">
+        <option value="">선택</option>
+        <option>여성</option>
+        <option>남성</option>
+        <option>기타</option>
+      </select>
+    </div>
+
+    <div class="field">
+      <label>생일</label>
+      <input type="date" name="birth" />
+    </div>
+
+    <div class="field two">
+      <div>
+        <label>기상시간</label>
+        <input type="time" name="wakeTime" />
+      </div>
+      <div>
+        <label>취침시간</label>
+        <input type="time" name="sleepTime" />
+      </div>
+    </div>
+
+    <button class="btn primary" type="submit">시작하기</button>
+  </form>
+</main>
+</body>
+</html>
